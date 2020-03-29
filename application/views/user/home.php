@@ -11,6 +11,9 @@
 
 	<!-- Main Styles -->
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/styles/style.min.css">
+
+	<!-- Favicon icon -->
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/ekedai.png" type="image/x-icon">
 	
 	<!-- Material Design Icon -->
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/fonts/material-design/css/materialdesignicons.css">
@@ -107,9 +110,8 @@
 			<div class="col-xs-12">
 				<div class="box-content">
 					
-				<!------ Message berhasil atau tidak ---------->
-                      <?php echo $this->session->userdata('message'); ?>
-                        <br>
+				<marquee> <strong>SELAMAT DATANG DI APLIKASI E-KEDAI</strong></marquee>
+                  <br><hr>
 
 					<div class="table-responsive" data-pattern="priority-columns">
 					<br>
@@ -127,8 +129,8 @@
                             ?>
 							<tr>
 								<td><?php echo $dp['barang']; ?></td>
-								<td><?php echo $dp['harga']; ?></td>
-								<td align="center"><?php echo $dp['satuan']; ?></td>
+								<td class="text-danger"><?php echo rupiah($dp['harga']); ?></td>
+								<td class="text-success" align="center"><?php echo $dp['satuan']; ?></td>
 							</tr>
 
 							<?php

@@ -11,6 +11,9 @@
 
 	<!-- Main Styles -->
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/styles/style.min.css">
+
+	<!-- Favicon icon -->
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/ekedai.png" type="image/x-icon">
 	
 	<!-- Material Design Icon -->
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/fonts/material-design/css/materialdesignicons.css">

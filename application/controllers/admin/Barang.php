@@ -9,6 +9,7 @@ class Barang extends CI_Controller
         parent::__construct();
 
         $this->load->model('Barang_model');
+        $this->load->helper('kedai_helper');
         $this->load->library(array('form_validation'));
     }
 

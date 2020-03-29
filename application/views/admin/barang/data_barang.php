@@ -11,6 +11,8 @@
 
 	<!-- Main Styles -->
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/styles/style.min.css">
+	<!-- Favicon icon -->
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/ekedai.png" type="image/x-icon">
 	
 	<!-- Material Design Icon -->
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/fonts/material-design/css/materialdesignicons.css">
@@ -143,7 +145,7 @@
 							<tr>
 								<td><?php echo $no; ?></td>
 								<td><?php echo $dp['barang']; ?></td>
-								<td><?php echo $dp['harga']; ?></td>
+								<td style="color:green;"><?php echo rupiah($dp['harga']); ?></td>
 								<td align="center"><?php echo $dp['satuan']; ?></td>
 								<td align="center">
                                     <a href="<?php echo base_url(); ?>admin/barang/edit/<?php echo $dp['id']; ?>"><button class="btn-sm btn-success"><i class="ace-icon fa fa-pencil-square-o "></i></button>

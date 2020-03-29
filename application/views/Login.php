@@ -9,6 +9,8 @@
 
 	<title>Halaman | Login</title>
 	<link rel="stylesheet" href="assets/styles/style.min.css">
+	  <!-- Favicon icon -->
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/ekedai.png" type="image/x-icon">
 
 	<!-- Waves Effect -->
 	<link rel="stylesheet" href="assets/plugin/waves/waves.min.css">
